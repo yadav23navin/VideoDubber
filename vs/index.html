@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- JavaScript -->
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span class="project-name">Project Name</span>
+        <div class="actions">
+            <a href="#">Sign Up</a>
+            <a href="#">Log In</a>
+            <button class="btn btn-upgrade">Upgrade</button>
+            <button class="btn btn-done">Done</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">V</div>
+            <nav>
+                <ul>
+                    <li class="active"><span class="icon">🔵</span> Video</li>
+                    <li><span class="icon">🎵</span> Audio</li>
+                    <li><span class="icon">🔤</span> Subtitles</li>
+                    <li><span class="icon">✏️</span> Text</li>
+                    <li><span class="icon">📦</span> Elements</li>
+                    <li><span class="icon">⚙️</span> Settings</li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Add Media</h2>
+
+            <div class="upload-section">
+                <div class="upload-box">
+                    <p>Upload a File</p>
+                    <small>Drag & drop a file or <a href="#">import from a link</a></small>
+                </div>
+                <div class="button-group">
+                    <button class="btn">Record</button>
+                    <button class="btn">Brand Kits</button>
+                </div>
+                <div class="button-group">
+                    <button class="btn">Text To Speech</button>
+                    <button class="btn new-feature">Voice Clone <span class="new-label">NEW</span></button>
+                </div>
+            </div>
+
+            <!-- AI Avatars -->
+            <div class="avatar-section">
+                <h3>AI Avatars <a href="#">View All</a></h3>
+                <div class="avatars">
+                    <img src="avatar1.png" alt="Avatar">
+                    <img src="avatar2.png" alt="Avatar">
+                    <img src="avatar3.png" alt="Avatar">
+                    <img src="avatar4.png" alt="Avatar">
+                </div>
+            </div>
+
+            <!-- Video Preview -->
+            <div class="video-container">
+                <div class="video-box"></div>
+            </div>
+
+            <!-- Video Options -->
+            <div class="video-options">
+                <select>
+                    <option>Landscape (16:9)</option>
+                    <option>Portrait (9:16)</option>
+                    <option>Square (1:1)</option>
+                </select>
+                <button class="btn btn-bg">Background</button>
+                <button class="btn btn-settings">Settings</button>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="control-btn">⏮</button>
+                <button class="control-btn play-btn">▶</button>
+                <button class="control-btn">⏭</button>
+                <span class="time-display">00:22.9 / 01:00.0</span>
+                <button class="control-btn">🔍</button>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <span class="scissor">✂️ Split</span>
+                <span>+ Add media to this project</span>
+                <div class="time-track">
+                    <div class="time-indicator"></div>
+                </div>
+                <div class="timeline-footer">
+                    <span>20s</span>
+                    <span>30s</span>
+                    <span>40s</span>
+                    <span>50s</span>
+                    <span>1m</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
